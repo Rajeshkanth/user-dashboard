@@ -5,9 +5,20 @@ import { useQuery } from "react-query";
 const Context = createContext();
 
 const getUsers = async () => {
-  const response = await axios.get(process.env.REACT_APP_GET_USERS);
-  if (response.status != 200) throw new Error("Internal Error");
-  return response;
+    try {
+        const response = await axios.get(process.env.REACT_APP_GET_USERS);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching users:", error);
+
+        if (error.response) {
+          throw new Error(`Error: ${error.response.status} - ${error.response.data?.message || "Something went wrong"}`);
+        } else if (error.request) {
+          throw new Error("Error: No response from the server. Please check your network.");
+        } else {
+          throw new Error("Error: Unable to fetch users. Please try again later.");
+        }
+    }
 };
 
 export const Provider = ({ children }) => {
@@ -172,9 +183,7 @@ export const Provider = ({ children }) => {
   
 
   useEffect(() => {
-    console.log(data);
-
-    if (data) setUsers(data.data);
+    if (data) setUsers(data);
   }, [data]);
 
   return (
