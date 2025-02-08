@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 
 This project will get users from backend and show them in the table view, it is sortable, filterable, and responsive with a edit modal to update the user details.
+### npm install
+
+This will install all the deps.
 
 ### `npm start`
 
