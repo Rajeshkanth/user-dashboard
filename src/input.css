@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-quartz.css";
+@import "flowbite/src/themes/default";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+:root {
+    --primary-color: #EA3819;
+    --secondary-color: #2E2E2E;
+    --tw-liteOrange: #rgba(234, 56, 25, 0.2);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.ag-theme-quartz {
+    --ag-foreground-color: var(--primary-color);
+    --ag-secondary-foreground-color: #57575a;
+    --ag-header-foreground-color: #000000 ;
+    --ag-data-color: #000000 !important;
+    --ag-row-hover-color: #f4e9e9;
+    --ag-range-selection-border-color: var(--primary-color);
+}
+.ag-theme-quartz .ag-header-cell-text {
+    font-weight: 700 !important;
+}
+.ag-floating-filter-button{
+    display: none;
+}
+.ag-cell {
+    color: #000000 !important;
+}
+/* Modify Floating Filter Input */
+.ag-theme-quartz input{
+    background-color: white !important;
+    color: #333 !important; 
+    border: 1px solid #ccc !important; 
+    border-radius: 4px !important; 
+    padding: 6px 10px !important;
+    padding-left: 24px !important; 
+    font-size: 14px !important;
+    width: 100% !important;
+}
+
+.ag-input-field-input .ag-text-field-input {
+border: 1px solid #ccc !important;
+}
+  
