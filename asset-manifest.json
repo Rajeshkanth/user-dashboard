@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dynamic-dashboard/static/css/main.727e9c20.css",
-    "main.js": "/dynamic-dashboard/static/js/main.157b2018.js",
-    "static/js/488.92e7c197.chunk.js": "/dynamic-dashboard/static/js/488.92e7c197.chunk.js",
-    "static/media/bouncing-circles.svg": "/dynamic-dashboard/static/media/bouncing-circles.8cfdadd3fcdcd4c0f5ecd32a84f8fcae.svg",
-    "index.html": "/dynamic-dashboard/index.html",
-    "main.727e9c20.css.map": "/dynamic-dashboard/static/css/main.727e9c20.css.map",
-    "main.157b2018.js.map": "/dynamic-dashboard/static/js/main.157b2018.js.map",
-    "488.92e7c197.chunk.js.map": "/dynamic-dashboard/static/js/488.92e7c197.chunk.js.map"
+    "main.css": "/user-dashboard/static/css/main.727e9c20.css",
+    "main.js": "/user-dashboard/static/js/main.d55bc513.js",
+    "static/js/488.4dc21bc9.chunk.js": "/user-dashboard/static/js/488.4dc21bc9.chunk.js",
+    "static/media/bouncing-circles.svg": "/user-dashboard/static/media/bouncing-circles.8cfdadd3fcdcd4c0f5ecd32a84f8fcae.svg",
+    "index.html": "/user-dashboard/index.html",
+    "main.727e9c20.css.map": "/user-dashboard/static/css/main.727e9c20.css.map",
+    "main.d55bc513.js.map": "/user-dashboard/static/js/main.d55bc513.js.map",
+    "488.4dc21bc9.chunk.js.map": "/user-dashboard/static/js/488.4dc21bc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.727e9c20.css",
-    "static/js/main.157b2018.js"
+    "static/js/main.d55bc513.js"
   ]
 }
